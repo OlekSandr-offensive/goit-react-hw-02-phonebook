@@ -1,11 +1,10 @@
 import React from 'react';
 import './ContactForm.scss';
-import shortid from 'shortid';
 import PropTypes from 'prop-types';
 
 class ContactForm extends React.Component {
   state = {
-    id: shortid.generate(),
+    id: '',
     name: '',
     number: '',
   };

@@ -10,8 +10,6 @@ class App extends React.Component {
   state = {
     contacts: initialContacts,
     filter: '',
-    name: '',
-    number: '',
   };
 
   FormSubmitHandler = ({ name, number }) => {
