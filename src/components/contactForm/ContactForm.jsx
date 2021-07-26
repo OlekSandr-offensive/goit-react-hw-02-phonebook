@@ -3,6 +3,10 @@ import './ContactForm.scss';
 import PropTypes from 'prop-types';
 
 class ContactForm extends React.Component {
+  static propTypes = {
+    onSubmit: PropTypes.func.isRequired,
+  };
+
   state = {
     name: '',
     number: '',
@@ -56,9 +60,5 @@ class ContactForm extends React.Component {
     );
   }
 }
-
-ContactForm.propTypes = {
-  onSubmit: PropTypes.func.isRequired,
-};
 
 export default ContactForm;

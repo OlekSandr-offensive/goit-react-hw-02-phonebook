@@ -1,10 +1,10 @@
 import React from 'react';
 import shortid from 'shortid';
 import './App.css';
-import ContactList from './components/contacts/ContactList';
+import ContactList from '../contacts/ContactList';
 import initialContacts from './contacts.json';
-import ContactForm from './components/contactForm/ContactForm';
-import Filter from './components/filter/Filter';
+import ContactForm from '../contactForm';
+import Filter from '../filter';
 
 class App extends React.Component {
   state = {
