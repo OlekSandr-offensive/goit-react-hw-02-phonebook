@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 
 class ContactForm extends React.Component {
   state = {
-    id: '',
     name: '',
     number: '',
   };
