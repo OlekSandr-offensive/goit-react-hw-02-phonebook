@@ -9,7 +9,7 @@ const ContactList = ({ contacts, onDeleteContacts }) => (
         key={id}
         name={name}
         number={number}
-        onClick={onDeleteContacts}
+        onDeleteContacts={() => onDeleteContacts(id)}
       />
     ))}
   </ul>
